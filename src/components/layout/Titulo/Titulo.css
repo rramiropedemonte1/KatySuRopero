@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
 .letra {
-  color: rgba(214, 24, 182, 0.545);
+  color: rgba(255, 105, 180, 0.712);
+}
+
+.Titulo {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
 }
