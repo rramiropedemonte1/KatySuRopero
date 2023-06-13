@@ -32,12 +32,3 @@ img.indu {
   font-size: 18px;
   font-weight: 900;
 }
-
-.info-product button {
-  border: none;
-  background: none;
-  background-color: black;
-  color: white;
-  padding: 15px 10px;
-  cursor: pointer;
-}
