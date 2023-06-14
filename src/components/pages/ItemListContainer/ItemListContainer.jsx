@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ItemList from "../ItemList/ItemList";
+import TituloCard from "../../common/card/Card/TituloCard";
 
 const indumentaria = [
   {
@@ -46,6 +47,7 @@ const ItemListContainer = () => {
 
   return (
     <>
+      <TituloCard />
       <ItemList data={data} />
     </>
   );
