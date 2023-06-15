@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import CardWidget from "./CardWidget";
 import "./Navbar.css";
 
@@ -19,14 +20,14 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#">
+              <Link className="nav-link" to="/">
                 Inicio
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Ropa
-              </a>
+              <Link className="nav-link" to="/category/campera">
+                Camperas
+              </Link>
             </li>
           </ul>
         </div>

@@ -1,32 +1,25 @@
 import { useState } from "react";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { useEffect } from "react";
-
-const indumentaria = [
-  {
-    id: 1,
-    title: "Buzo Essentials",
-    price: 25000,
-    img: "/img/buzo essentials.webp",
-    stock: 3,
-  },
-];
+import { useParams } from "react-router-dom";
+import { products } from "../../../productsMock";
 
 const ItemDetailContainer = () => {
   const [data, setData] = useState({});
-  console.log(data);
+
+  const { id } = useParams();
 
   useEffect(() => {
-    const getData = new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(indumentaria);
-      }, 1000);
+    let productFind = products.find((product) => product.id === +id);
+
+    const getData = new Promise((res) => {
+      res(productFind);
     });
 
-    getData.then((res) => setData(res));
-  });
+    getData.then((res) => setData(res)).catch((err) => console.log(err));
+  }, [id]);
 
-  return <ItemDetail data={data} />;
+  return <ItemDetail data={data[0]} />;
 };
 
 export default ItemDetailContainer;

@@ -1,15 +1,17 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/layout/Layout";
-import ItemListContainer from "./components/pages/ItemListContainer/ItemListContainer";
-import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
+import { rutas } from "./routes/rutas";
 
 const App = () => {
   return (
     <div>
       <BrowserRouter>
-        <Layout />
         <Routes>
-          <Route path="/" element={<ItemDetailContainer />} />
+          <Route element={<Layout />}>
+            {rutas.map(({ id, path, Element }) => (
+              <Route key={id} path={path} element={<Element />} />
+            ))}
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>

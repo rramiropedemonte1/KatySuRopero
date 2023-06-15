@@ -1,10 +1,6 @@
-import Counter from "../Counter/Counter";
+import { Link } from "react-router-dom";
 
 const Card = ({ info }) => {
-  const onAdd = (quantity) => {
-    console.log(`compraste ${quantity} unidades`);
-  };
-
   return (
     <div className="indumentaria-items">
       <div className="induitems indu4">
@@ -12,7 +8,9 @@ const Card = ({ info }) => {
         <div className="info-product">
           <h4 className="nombre">{info.title}</h4>
           <p className="price">${info.price}</p>
-          <Counter initial={1} stock={5} onAdd={onAdd} />
+          <Link to={`/itemDetail/${info.id}`}>
+            <button className="boton">Ver el </button>
+          </Link>
         </div>
       </div>
     </div>
