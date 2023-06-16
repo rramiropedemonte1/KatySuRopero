@@ -7,11 +7,9 @@ const App = () => {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route element={<Layout />}>
-            {rutas.map(({ id, path, Element }) => (
-              <Route key={id} path={path} element={<Element />} />
-            ))}
-          </Route>
+          {rutas.map(({ id, path, Element }) => (
+            <Route key={id} path={path} element={<Element />} />
+          ))}
         </Routes>
       </BrowserRouter>
     </div>
