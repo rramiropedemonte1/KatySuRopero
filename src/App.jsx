@@ -6,6 +6,7 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
+        <Layout />
         <Routes>
           {rutas.map(({ id, path, Element }) => (
             <Route key={id} path={path} element={<Element />} />
