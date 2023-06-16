@@ -1,5 +1,6 @@
 .indumentaria-div {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -36,7 +37,7 @@ img.indu {
 .boton {
   border: none;
   background: none;
-  background-color: black;
+  background-color: rgba(255, 105, 180, 0.537);
   color: white;
   width: 100%;
   padding: 15px 30px;
