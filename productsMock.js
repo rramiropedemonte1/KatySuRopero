@@ -66,7 +66,7 @@ export const products = [
 ];
 
 export const getProducts = () => {
-  return new Promise((res, rej) => {
+  return new Promise((res) => {
     setTimeout(() => {
       res(products);
     }, 1000);

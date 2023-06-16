@@ -9,7 +9,7 @@ import { getProducts } from "../../../../productsMock";
 const ItemListContainer = () => {
   const [data, setData] = useState([]);
 
-  const { categoryName } = useParams("/category/:buzo");
+  const { categoryName } = useParams();
 
   useEffect(() => {
     if (categoryName) {
