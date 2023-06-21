@@ -19,7 +19,7 @@ const ItemDetailContainer = () => {
     getData.then((res) => setData(res)).catch((err) => console.log(err));
   }, [id]);
 
-  return <ItemDetail data={data[0]} />;
+  return <ItemDetail data={data} />;
 };
 
 export default ItemDetailContainer;
