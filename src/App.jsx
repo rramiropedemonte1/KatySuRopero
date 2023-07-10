@@ -7,12 +7,11 @@ const App = () => {
   return (
     <BrowserRouter>
       <CartContextProvider>
+        <Layout />
         <Routes>
-          <Route element={<Layout />}>
-            {rutas.map(({ id, path, Element }) => (
-              <Route key={id} path={path} element={<Element />} />
-            ))}
-          </Route>
+          {rutas.map(({ id, path, Element }) => (
+            <Route key={id} path={path} element={<Element />} />
+          ))}
           <Route path="*" element={<h1>404 not found</h1>} />
         </Routes>
       </CartContextProvider>
