@@ -19,6 +19,12 @@
   color: white;
 }
 
+.bi-envelope {
+  font-size: large;
+  color: white;
+  padding: 3px;
+}
+
 .bi-telephone {
   font-size: large;
   color: white;

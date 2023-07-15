@@ -32,7 +32,9 @@ const Footer = () => {
             <li>
               <i className="bi bi-telephone">+54-1122444156</i>
             </li>
-            <li className="navegacion-li">ramiivan59gmail.com</li>
+            <li className="navegacion-li">
+              <i className="bi bi-envelope"></i>ramiivan59@gmail.com
+            </li>
           </ul>
         </div>
         <ul className="navegacion">

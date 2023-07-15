@@ -3,7 +3,7 @@ import "./TituloCard.css";
 const TituloCard = () => {
   return (
     <div>
-      <h2>Nuestra Indumentaria</h2>
+      <h2 className="titulo">Nuestra Indumentaria</h2>
     </div>
   );
 };

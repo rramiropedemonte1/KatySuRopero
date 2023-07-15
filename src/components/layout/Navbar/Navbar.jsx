@@ -2,8 +2,6 @@ import { Link } from "react-router-dom";
 import CardWidget from "./CardWidget";
 import "./Navbar.css";
 
-import { Badge } from "@mui/material";
-
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg">
