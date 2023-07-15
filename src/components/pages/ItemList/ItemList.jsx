@@ -4,11 +4,13 @@ import "./ItemList.css";
 const ItemList = ({ data }) => {
   console.log(data);
   return (
-    <div className="indumentaria-div">
-      {data.map((info) => {
-        return <Card key={info.id} info={info} />;
-      })}
-    </div>
+    <>
+      <div className="indumentaria-div">
+        {data.map((info) => {
+          return <Card key={info.id} info={info} />;
+        })}
+      </div>
+    </>
   );
 };
 

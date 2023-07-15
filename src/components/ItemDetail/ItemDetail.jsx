@@ -1,14 +1,7 @@
 import Counter from "../common/card/Counter/Counter";
 import "./ItemDetail.css";
 
-const ItemDetail = ({ data }) => {
-  const onAdd = (quantity) => {
-    let cantidad = {
-      ...data,
-      quantity: quantity,
-    };
-    console.log(cantidad);
-  };
+const ItemDetail = ({ data, onAdd }) => {
   return (
     <>
       <div className="indumentaria-items">

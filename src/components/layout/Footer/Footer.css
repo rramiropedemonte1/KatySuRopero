@@ -1,0 +1,37 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.847);
+  color: white;
+}
+
+.titulo__footer {
+  display: flex;
+  justify-content: center;
+}
+
+.navegacion {
+  list-style-type: none;
+  font-size: large;
+}
+
+.navegacion-li {
+  color: white;
+}
+
+.bi-telephone {
+  font-size: large;
+  color: white;
+}
+
+.bi-instagram {
+  color: white;
+}
+
+.bi-github {
+  color: white;
+}
+
+.bi-twitter {
+  color: white;
+}

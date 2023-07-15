@@ -1,5 +1,5 @@
-import Imagen2 from "/img/ropero4.jpg";
-import Imagen3 from "/img/ropero3.jpg";
+import Imagen3 from "/img/ropero4-transformed.jpg";
+import Imagen2 from "/img/ropero3-transformed.jpg";
 import "./Carousel.css";
 
 const Carousel = () => {
@@ -23,10 +23,10 @@ const Carousel = () => {
       </div>
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img src={Imagen2} className="d-block w-100" alt="..." />
+          <img src={Imagen3} className="d-block w-100" alt="..." />
         </div>
         <div className="carousel-item">
-          <img src={Imagen3} className="d-block w-100" alt="..." />
+          <img src={Imagen2} className="d-block w-100" alt="..." />
         </div>
       </div>
       <button

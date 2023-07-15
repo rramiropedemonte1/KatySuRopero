@@ -1,4 +1,4 @@
-import Carousel from "./Carousel/Carousel";
+import Carousel from "../pages/Carousel/Carousel";
 import Navbar from "./Navbar/Navbar";
 import Titulo from "./Titulo/Titulo";
 
@@ -7,7 +7,6 @@ const Layout = () => {
     <div>
       <Titulo />
       <Navbar />
-      <Carousel />
     </div>
   );
 };

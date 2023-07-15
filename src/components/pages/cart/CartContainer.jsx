@@ -11,18 +11,18 @@ const CartContainer = () => {
 
   const limpiar = () => {
     Swal.fire({
-      title: "Seguro quieres limpiar el carrito?",
+      titleText: "Seguro quieres limpiar el carrito?",
       showDenyButton: true,
       showCancelButton: false,
       confirmButtonText: "Si, limpiar",
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
       denyButtonText: `No, cancelar`,
     }).then((result) => {
       /* Read more about isConfirmed, isDenied below */
       if (result.isConfirmed) {
         clearCart();
         Swal.fire("Carrito limpio", "", "success");
-      } else if (result.isDenied) {
-        Swal.fire("El carrito queda como estaba", "", "info");
       }
     });
   };
