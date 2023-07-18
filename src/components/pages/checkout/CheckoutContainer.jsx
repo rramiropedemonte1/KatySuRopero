@@ -61,7 +61,7 @@ function CheckoutContainer() {
   return (
     <div>
       {orderId ? (
-        <h1> Su compra ue existosa, el número de compra es: {orderId}</h1>
+        <h1> Su compra fue existosa, el número de compra es: {orderId}</h1>
       ) : (
         <Checkout
           handleSumbit={handleSubmit}
